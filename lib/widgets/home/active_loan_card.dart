@@ -17,7 +17,7 @@ class ActiveLoanCard extends StatelessWidget {
     final days = loan.daysRemaining;
 
     return GestureDetector(
-      onTap: () => context.push('/document/${document.id}'),
+      onTap: () => context.push('/catalogue/document/${document.id}'),
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(

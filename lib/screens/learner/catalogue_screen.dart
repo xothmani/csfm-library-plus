@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../theme/app_colors.dart';
 import '../../providers/documents_provider.dart';
-import '../../widgets/common/app_bottom_nav.dart';
 import '../../widgets/common/app_search_bar.dart';
 import '../../widgets/common/empty_state.dart';
 import '../../widgets/catalogue/book_cards.dart';
@@ -107,7 +106,6 @@ class _CatalogueScreenState extends ConsumerState<CatalogueScreen> {
           ],
         ),
       ),
-      bottomNavigationBar: const AppBottomNav(currentIndex: 1),
     );
   }
 }

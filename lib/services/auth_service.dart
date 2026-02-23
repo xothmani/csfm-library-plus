@@ -65,6 +65,11 @@ class AuthService {
     await _auth.signOut();
   }
 
+  // Send password reset email
+  Future<void> sendPasswordResetEmail(String email) async {
+    await _auth.sendPasswordResetEmail(email: email);
+  }
+
   // Fetch full user profile
   Future<UserModel?> getCurrentUserProfile() async {
     final user = _auth.currentUser;

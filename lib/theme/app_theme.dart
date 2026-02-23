@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   // Brand Colors
-  static const Color primary = Color(0xFF4F8EF7); // Electric Blue
-  static const Color secondary = Color(0xFF7B5EA7); // Purple
+  static const Color primary = Color(0xFF4F8EF7); 
+  static const Color secondary = Color(0xFF7B5EA7);
   static const Color goldAccent = Color(0xFFC9A84C); // Priority Badges
   
   // Background & Surfaces
@@ -102,11 +102,16 @@ class AppTheme {
           borderRadius: BorderRadius.circular(14),
           borderSide: BorderSide.none,
         ),
+        // No blue ring on focus — stays clean with the dark design
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
-          borderSide: const BorderSide(color: primary, width: 1.5),
+          borderSide: BorderSide.none,
         ),
         errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(14),
+          borderSide: const BorderSide(color: error, width: 1.5),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
           borderSide: const BorderSide(color: error, width: 1.5),
         ),

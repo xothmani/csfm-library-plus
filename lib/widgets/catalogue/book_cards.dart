@@ -10,7 +10,7 @@ class BookHorizontalCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => context.push('/document/${document.id}'),
+      onTap: () => context.push('/catalogue/document/${document.id}'),
       child: SizedBox(
         width: 130,
         child: Column(
@@ -61,7 +61,7 @@ class BookGridCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => context.push('/document/${document.id}'),
+      onTap: () => context.push('/catalogue/document/${document.id}'),
       child: Container(
         decoration: BoxDecoration(color: AppColors.surface, borderRadius: BorderRadius.circular(16), border: Border.all(color: AppColors.border)),
         child: Column(

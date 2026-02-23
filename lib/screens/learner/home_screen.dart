@@ -11,7 +11,6 @@ import '../../providers/auth_provider.dart';
 import '../../providers/user_provider.dart';
 import '../../providers/documents_provider.dart';
 import '../../providers/loans_provider.dart';
-import '../../widgets/common/app_bottom_nav.dart';
 import '../../widgets/common/app_search_bar.dart';
 import '../../widgets/common/empty_state.dart';
 import '../../widgets/home/stat_card.dart';
@@ -172,7 +171,6 @@ class HomeScreen extends ConsumerWidget {
           ],
         ),
       ),
-      bottomNavigationBar: const AppBottomNav(currentIndex: 0),
     );
   }
 }
